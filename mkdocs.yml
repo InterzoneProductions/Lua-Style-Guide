@@ -1,0 +1,15 @@
+site_name: My Docs
+
+
+theme:
+  name: material
+  palette:
+    primary: red
+    accent: indigo
+    scheme: slate
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
