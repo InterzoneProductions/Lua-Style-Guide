@@ -319,7 +319,7 @@ At the top of each source file, simple documentation should be given to show how
 * Use LOUD_SNAKE_CASE for local constants.
 * Prefix private variables/constants with an underscore, _camelCase 
 
-## Yeilding 
+## Yielding 
 
 * As much as possible, refrain from yielding the main thread. Use an event-based approach.
 * Refrain from using wait() as it comes with performance and yielding issues, use task.wait
