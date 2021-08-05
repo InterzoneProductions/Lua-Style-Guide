@@ -323,3 +323,29 @@ At the top of each source file, simple documentation should be given to show how
 
 * As much as possible, refrain from yielding the main thread. Use an event-based approach.
 * Refrain from using wait() as it comes with performance and yielding issues, use task.wait
+
+## Example
+
+```lua
+-- foundanerror
+-- SpeedService/ReplicatedStorage
+-- 8/5/2021
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+
+local DataService = require(ReplicatedStorage.DataService)
+local Signal = require(ReplicatedStorage.Signal)
+
+local BASE_SPEED = 1
+local UPDATE_INTERVAL = 1
+
+local SpeedService = {}
+
+function SpeedService.CheckSpeed(player)
+    local Speed = DataService.ReturnSpeed(player)
+    return Speed
+end
+
+return SpeedService
+```
