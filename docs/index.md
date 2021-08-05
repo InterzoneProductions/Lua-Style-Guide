@@ -1,15 +1,15 @@
 ## Guiding Principles
-* Optimization is key, maintain good coding practices within your code base.
-* Maintain a consitent code style and maintain a clean formating stlye. 
-* Avoid magic values and refrain from mirco-optimizing your code. Code should only be optimized if the performance gain is significant.
+* Optimization is key, maintain good coding practices within your codebase.
+* Maintain a consistent code style and maintain a clean formatting style. 
+* Avoid magic values and refrain from micro-optimizing your code. Code should only be optimized if the performance gain is significant.
 * Readability is king. Code within Knit should not be impressive; it should be readable. Having readable code is important for debugging and future maintainability.
-* Avoid using wait() in your code base. Use the new task library, task.wait().
+* Avoid using wait() in your codebase. Use the new task library, task. wait().
 * All services should be referenced using game:GetService at the top of the file.
 * When importing a module, use the name of the module for its variable name.
 
 
 ## File Structure
-1.  A file header, lets other developers know who created the code and when script was created.
+1.  A file header, lets other developers know who created the code and when the script was created.
     ```lua
     -- AUTHOR
     -- SCRIPT NAME/PARENT
@@ -59,7 +59,7 @@ local MyClass = {}
 
 Next, we assign the `__index` member on the class back to itself. This is a handy trick that lets us use the class's table as the metatable for instances as well.
 
-When we construct an instance, we'll tell Lua to use our `__index` value to find values that are missing in our instances. It's sort of like `prototype` in JavaScript, if you're familiar.
+When we construct an instance, we'll tell Lua to use our `__index` value to find values that are missing in our instances. It's sort of like `prototype` in JavaScript if you're familiar.
 
 ```lua
 MyClass.__index = MyClass
@@ -94,12 +94,12 @@ end
 
 At this point, our class is ready to use!
 
-We can construct instances and start tinkering with it:
+We can construct instances and start tinkering with them:
 
 ```lua
 local instance = MyClass.new()
 
--- Properties on the instance are visible, since it's just a table:
+-- Properties on the instance are visible since it's just a table:
 print(instance.phrase) -- "bark"
 
 -- Methods are pulled from MyClass because of our metatable:
@@ -137,7 +137,7 @@ Since `__index` is only called when a key is missing in the table, `MyEnum.A`and
 * Always indent with tabs
 * Keep lines under 120 columns wide, assuming four column wide tabs.
 * Wrap comments to 80 columns wide, assuming four column wide tabs.
-    * This is different than normal code; the hope is that short lines help improve readability of comment prose, but is too restrictive for code.
+    * This is different than normal code; the hope is that short lines help improve the readability of comment prose, but is too restrictive for code.
 * Don't leave whitespace at the end of lines.
 * No vertical alignment.
 
@@ -177,6 +177,7 @@ end)
 ```
 
 * This is also true for if blocks, even if their body is just a return statement. Consistency is important.
+
 ```lua
 if valueIsInvalid then
     return
@@ -184,17 +185,20 @@ end
 ```
 
 * Put a space before and after operators, except when clarifying precedence.
+
 ```lua
 print(2 * 9 * 8 / 2)
 ```
 
 * Put a space after commas in tables and function calls
+
 ```lua
 local friends = {"bob", "amy", "joe"}
 foo(5, 6, 7)
 ```
 
 * When creating blocks, inline any opening syntax elements.
+
 ```lua
 local foo = {
     bar = 2,
@@ -205,7 +209,7 @@ if foo then
 end
 ```
 
-* Avoid putting curly braces for tables on their own line. Doing so harms readability, since it forces the reader to move to another line in an awkward spot in the statement.
+* Avoid putting curly braces for tables on their own line. Doing so harms readability since it forces the reader to move to another line in an awkward spot in the statement.
 
 <span style="color:green">**Good**:</span>
 ```lua
@@ -308,7 +312,7 @@ At the top of each source file, simple documentation should be given to show how
 
 ## Naming 
 
-* Spell words fully, refrain from using abreviations.
+* Spell words fully, refrain from using abbreviations.
 * Use PascalCase for class and enum-like objects.
 * Use PascalCase for all Roblox Services. 
 * Use camelCase for local variables, and functions.
@@ -317,5 +321,5 @@ At the top of each source file, simple documentation should be given to show how
 
 ## Yeilding 
 
-* As much as possible, refrain from yeilding the main thread. Use an event based approach.
-* Refrain from using wait() as it comes with performance and yeilding issues, use task.wait
+* As much as possible, refrain from yielding the main thread. Use an event-based approach.
+* Refrain from using wait() as it comes with performance and yielding issues, use task.wait
