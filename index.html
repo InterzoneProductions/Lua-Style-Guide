@@ -1,0 +1,856 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+    
+    
+      
+        <title>My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1118c9be.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ba0d045b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guiding-principles" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guiding-principles" class="md-nav__link">
+    Guiding Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    File Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requires" class="md-nav__link">
+    Requires
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metatables" class="md-nav__link">
+    Metatables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prototype-based-classes" class="md-nav__link">
+    Prototype-based classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Prototype-based classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guarding-against-typos" class="md-nav__link">
+    Guarding Against Typos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-punctuation" class="md-nav__link">
+    General Punctuation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-whitespace" class="md-nav__link">
+    General Whitespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    Blocks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-literals" class="md-nav__link">
+    String literals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yielding" class="md-nav__link">
+    Yielding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guiding-principles" class="md-nav__link">
+    Guiding Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    File Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requires" class="md-nav__link">
+    Requires
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metatables" class="md-nav__link">
+    Metatables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prototype-based-classes" class="md-nav__link">
+    Prototype-based classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Prototype-based classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guarding-against-typos" class="md-nav__link">
+    Guarding Against Typos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-punctuation" class="md-nav__link">
+    General Punctuation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-whitespace" class="md-nav__link">
+    General Whitespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks" class="md-nav__link">
+    Blocks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-literals" class="md-nav__link">
+    String literals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yielding" class="md-nav__link">
+    Yielding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Home</h1>
+                
+                <h2 id="guiding-principles">Guiding Principles</h2>
+<ul>
+<li>Optimization is key, maintain good coding practices within your codebase.</li>
+<li>Maintain a consistent code style and maintain a clean formatting style. </li>
+<li>Avoid magic values and refrain from micro-optimizing your code. Code should only be optimized if the performance gain is significant.</li>
+<li>Readability is king. Code within Knit should not be impressive; it should be readable. Having readable code is important for debugging and future maintainability.</li>
+<li>Avoid using wait() in your codebase. Use the new task library, task. wait().</li>
+<li>All services should be referenced using game:GetService at the top of the file.</li>
+<li>When importing a module, use the name of the module for its variable name.</li>
+</ul>
+<h2 id="file-structure">File Structure</h2>
+<ol>
+<li>A file header, lets other developers know who created the code and when the script was created.
+    <div class="highlight"><pre><span></span><code><span class="c1">-- AUTHOR</span>
+<span class="c1">-- SCRIPT NAME/PARENT</span>
+<span class="c1">-- DAY MONTH YEAR</span>
+</code></pre></div></li>
+<li>
+<p>Documentation
+    <div class="highlight"><pre><span></span><code><span class="cm">--[[</span>
+<span class="cm">    MyModule.foo(value: number)</span>
+<span class="cm">    MyModule.doo()</span>
+<span class="cm">    MyModule.poo(value: number)</span>
+<span class="cm">--]]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Services used by the file, using GetService</p>
+</li>
+<li>Module imports</li>
+<li>Constants </li>
+<li>Variables (refrain from  using global variables)</li>
+<li>Module definition (e.g. MyModule = {})</li>
+<li>Module code</li>
+<li>A return statement!</li>
+</ol>
+<h2 id="requires">Requires</h2>
+<ul>
+<li>All requires should be at the top of the file</li>
+<li>Use relative paths when importing modules from the same package.
+  <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">Knit</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">script</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Knit</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Use absolute paths when importing modules from a different package.
+  <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">CorePackages</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;CorePackages&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Roact</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">CorePackages</span><span class="p">.</span><span class="n">Roact</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h2 id="metatables">Metatables</h2>
+<ul>
+<li>Metatables are an incredibly powerful Lua feature that can be used to overload operators, implement prototypical inheritance, and tinker with limited object lifecycle.</li>
+</ul>
+<h2 id="prototype-based-classes">Prototype-based classes</h2>
+<ul>
+<li>
+<p>The most popular pattern for classes in Lua is sometimes referred to as the One True Pattern. It defines class members, instance members, and metamethods in the same table and highlights Lua's strengths well.</p>
+</li>
+<li>
+<p>First up, we create a regular, empty table:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyClass</span> <span class="o">=</span> <span class="p">{}</span>
+</code></pre></div>
+<p>Next, we assign the <code>__index</code> member on the class back to itself. This is a handy trick that lets us use the class's table as the metatable for instances as well.</p>
+<p>When we construct an instance, we'll tell Lua to use our <code>__index</code> value to find values that are missing in our instances. It's sort of like <code>prototype</code> in JavaScript if you're familiar.</p>
+<div class="highlight"><pre><span></span><code><span class="n">MyClass</span><span class="p">.</span><span class="n">__index</span> <span class="o">=</span> <span class="n">MyClass</span>
+</code></pre></div>
+<p>In most cases, we create a default constructor for our class. By convention, we usually call it <code>new</code>.</p>
+<p>Methods that don't operate on instances of our class are usually defined using a dot (<code>.</code>) instead of a colon (<code>:</code>).</p>
+<div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nc">MyClass</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- Define members of the instance here, even if they&#39;re `nil` by default.</span>
+        <span class="n">phrase</span> <span class="o">=</span> <span class="s2">&quot;bark&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+    <span class="c1">-- Tell Lua to fall back to looking in MyClass.__index for missing fields.</span>
+    <span class="nb">setmetatable</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">MyClass</span><span class="p">)</span>
+
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>We can also define methods that operate on instances. These are just methods that expect their first argument to be an instance. By convention, we define them using a colon (<code>:</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="c1">-- This is functionally identical to `function MyClass.bark(self)`</span>
+<span class="kr">function</span> <span class="nc">MyClass</span><span class="p">:</span><span class="nf">bark</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My phrase is&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">phrase</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>At this point, our class is ready to use!</p>
+<p>We can construct instances and start tinkering with them:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">instance</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="c1">-- Properties on the instance are visible since it&#39;s just a table:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">phrase</span><span class="p">)</span> <span class="c1">-- &quot;bark&quot;</span>
+
+<span class="c1">-- Methods are pulled from MyClass because of our metatable:</span>
+<span class="n">instance</span><span class="p">:</span><span class="n">bark</span><span class="p">()</span> <span class="c1">-- &quot;My phrase is bark&quot;</span>
+
+<span class="c1">-- We can also invoke methods with a dot by explicitly passing `instance`:</span>
+<span class="n">MyClass</span><span class="p">.</span><span class="n">bark</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
+<span class="n">instance</span><span class="p">.</span><span class="n">bark</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="guarding-against-typos">Guarding Against Typos</h3>
+<ul>
+<li>
+<p>Indexing into a table in Lua gives you <code>nil</code> if the key isn't present, which can cause errors that are difficult to trace!</p>
+</li>
+<li>
+<p>Our other major use case for metatables is to prevent certain forms of this problem. For types that act like enums, we can carefully apply an <code>__index</code> metamethod that throws:</p>
+</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyEnum</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="nb">setmetatable</span><span class="p">(</span><span class="n">MyEnum</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">__index</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+        <span class="nb">error</span><span class="p">((</span><span class="s2">&quot;%s is not a valid member&quot;</span><span class="p">):</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
+    <span class="kr">end</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre></div>
+Since <code>__index</code> is only called when a key is missing in the table, <code>MyEnum.A</code>and <code>MyEnum.B</code> will still give you back the expected values, but <code>MyEnum.FROB</code> will throw, hopefully helping engineers track down bugs more easily.</p>
+<h2 id="general-punctuation">General Punctuation</h2>
+<ul>
+<li>Don't use semicolons <code>;</code>. </li>
+</ul>
+<h2 id="general-whitespace">General Whitespace</h2>
+<ul>
+<li>Always indent with tabs</li>
+<li>Keep lines under 120 columns wide, assuming four column wide tabs.</li>
+<li>Wrap comments to 80 columns wide, assuming four column wide tabs.<ul>
+<li>This is different than normal code; the hope is that short lines help improve the readability of comment prose, but is too restrictive for code.</li>
+</ul>
+</li>
+<li>Don't leave whitespace at the end of lines.</li>
+<li>No vertical alignment.</li>
+</ul>
+<p><span style="color:green"><strong>Good</strong>:</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">foo</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">local</span> <span class="n">woo</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div>
+<span style="color:red"><strong>Bad</strong>:</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">foo</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">local</span> <span class="n">woo</span>       <span class="o">=</span>  <span class="mi">2</span>
+</code></pre></div></p>
+<ul>
+<li>Use a single empty line to express groups when useful. Do not start blocks with a blank line. Excess empty lines harm whole-file readability.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">PointsService</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">shared</span><span class="p">.</span><span class="n">PointsService</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">foo</span><span class="p">()</span>
+
+<span class="kr">end</span>
+
+<span class="n">PointsService</span><span class="p">.</span><span class="n">CheckData</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="n">PointsService</span><span class="p">.</span><span class="n">CheckData</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+
+<span class="n">PointsService</span><span class="p">.</span><span class="n">GivePoints</span><span class="p">(</span><span class="n">player</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>Use one statement per line. Put function bodies on new lines.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nb">table.sort</span><span class="p">(</span><span class="n">stuff</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="kr">return</span> <span class="nb">math.abs</span><span class="p">(</span><span class="n">sum</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>This is also true for if blocks, even if their body is just a return statement. Consistency is important.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">valueIsInvalid</span> <span class="kr">then</span>
+    <span class="kr">return</span>
+<span class="kr">end</span>
+</code></pre></div>
+<ul>
+<li>Put a space before and after operators, except when clarifying precedence.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>Put a space after commas in tables and function calls</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">friends</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bob&quot;</span><span class="p">,</span> <span class="s2">&quot;amy&quot;</span><span class="p">,</span> <span class="s2">&quot;joe&quot;</span><span class="p">}</span>
+<span class="n">foo</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>When creating blocks, inline any opening syntax elements.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">foo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">bar</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="kr">if</span> <span class="n">foo</span> <span class="kr">then</span>
+    <span class="c1">-- do something</span>
+<span class="kr">end</span>
+</code></pre></div>
+<ul>
+<li>Avoid putting curly braces for tables on their own line. Doing so harms readability since it forces the reader to move to another line in an awkward spot in the statement.</li>
+</ul>
+<p><span style="color:green"><strong>Good</strong>:</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">foo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">bar</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">baz</span> <span class="o">=</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="n">frob</span><span class="p">({</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre></div>
+<span style="color:red"><strong>Bad</strong>:</span>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">foo</span> <span class="o">=</span>
+<span class="p">{</span>
+    <span class="n">bar</span> <span class="o">=</span>
+
+    <span class="p">{</span>
+        <span class="n">baz</span> <span class="o">=</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">frob</span><span class="p">(</span>
+<span class="p">{</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre></div></p>
+<h2 id="blocks">Blocks</h2>
+<ul>
+<li>Don't use parentheses around the conditions in if, while, or repeat blocks.</li>
+<li>Use <code>do</code> blocks if limiting the scope of a variable is useful.</li>
+</ul>
+<h2 id="string-literals">String literals</h2>
+<ul>
+<li>Use double quotes when declaring string literals.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hi&quot;</span>
+</code></pre></div>
+<ul>
+<li>Use single quotes when declaring string literals that represent characters.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">characterA</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span>
+</code></pre></div>
+<h2 id="tables">Tables</h2>
+<ul>
+<li>Avoid tables with both list-like and dictionary-like keys.</li>
+<li>Iterate over list-like tables with <code>ipairs</code> and dictionary-like tables with <code>pairs</code>.</li>
+<li>Add trailing commas in multi-line tables.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">frobs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">andrew</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="n">billy</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="n">caroline</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>Keep the number of arguments to a given function small, preferably 1 or 2.</li>
+<li>Always use parentheses when calling a function. Lua allows you to skip them in many cases, but the results are typically much harder to parse.</li>
+<li>Declare named functions using function-prefix syntax. Non-member functions should always be local.</li>
+<li>When declaring a function inside a table, use function-prefix syntax. Differentiate between <code>.</code> and <code>:</code> to denote intended calling convention.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">-- This function should be called as Frobulator.new()</span>
+<span class="kr">function</span> <span class="nc">Frobulator</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+    <span class="kr">return</span> <span class="p">{}</span>
+<span class="kr">end</span>
+
+<span class="c1">-- This function should be called as Frobulator:frob()</span>
+<span class="kr">function</span> <span class="nc">Frobulator</span><span class="p">:</span><span class="nf">frob</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Frobbing&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<h2 id="documentation">Documentation</h2>
+<p>At the top of each source file, simple documentation should be given to show how to use the module. This should show method signatures, fields, and events. If needed, short examples of usage can be shown too.</p>
+<div class="highlight"><pre><span></span><code><span class="cm">--[[</span>
+
+<span class="cm">    -- CONSTRUCTOR DEFINITIONS --</span>
+
+<span class="cm">    -- FIELD DEFINITIONS --</span>
+
+<span class="cm">    -- METHOD DEFINITIONS --</span>
+
+<span class="cm">    -- EVENT DEFINITIONS --</span>
+
+<span class="cm">    -- EXAMPLES IF NEEDED --</span>
+
+<span class="cm">--]]</span>
+</code></pre></div>
+<h2 id="naming">Naming</h2>
+<ul>
+<li>Spell words fully, refrain from using abbreviations.</li>
+<li>Use PascalCase for class and enum-like objects.</li>
+<li>Use PascalCase for all Roblox Services. </li>
+<li>Use camelCase for local variables, and functions.</li>
+<li>Use LOUD_SNAKE_CASE for local constants.</li>
+<li>Prefix private variables/constants with an underscore, _camelCase </li>
+</ul>
+<h2 id="yielding">Yielding</h2>
+<ul>
+<li>As much as possible, refrain from yielding the main thread. Use an event-based approach.</li>
+<li>Refrain from using wait() as it comes with performance and yielding issues, use task.wait</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre><span></span><code><span class="c1">-- foundanerror</span>
+<span class="c1">-- SpeedService/ReplicatedStorage</span>
+<span class="c1">-- 8/5/2021</span>
+
+<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Players</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">DataService</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">.</span><span class="n">DataService</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Signal</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">.</span><span class="n">Signal</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">BASE_SPEED</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">local</span> <span class="n">UPDATE_INTERVAL</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="kd">local</span> <span class="n">SpeedService</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="kr">function</span> <span class="nc">SpeedService</span><span class="p">.</span><span class="nf">CheckSpeed</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">Speed</span> <span class="o">=</span> <span class="n">DataService</span><span class="p">.</span><span class="n">ReturnSpeed</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+    <span class="kr">return</span> <span class="n">Speed</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">SpeedService</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.2b46852b.min.js"></script>
+      
+    
+  </body>
+</html>
